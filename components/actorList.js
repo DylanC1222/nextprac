@@ -17,7 +17,7 @@ export default function ActorList({ results }) {
         <h2>Popular Actors</h2>
       </div>
       <div className="actor-list">
-        <Row xs={2} md={4} className="g-4">
+        <Row xs={2} md={5} className="g-4">
           {results.map((item, idx) => {
             return (
               <Col key={idx}>
