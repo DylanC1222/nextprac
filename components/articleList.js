@@ -22,18 +22,26 @@ export default function ArticleList({ results }) {
           {articles.map((item, idx) => {
             return (
               <Col key={idx}>
-                <Card style={{ width: "100%" }}>
-                  <div className={"d-flex flex-row"}>
-                    <img src="http://localhost:3000/images/article_pic.jpg" />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                    </Card.Body>
-                  </div>
-                </Card>
+                <a href="/" className="text-decoration-none text-primary">
+                  <Card style={{ width: "100%" }}>
+                    <div className={"d-flex flex-row"}>
+                      <img
+                        style={{ width: "75%", height: "auto" }}
+                        src="http://localhost:3000/images/article_pic.jpg"
+                      />
+                      <Card.Body>
+                        <Card.Title>
+                          Card Title of a moderately long but not too long and
+                          just right length
+                        </Card.Title>
+                        <Card.Text className="text-dark">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content
+                        </Card.Text>
+                      </Card.Body>
+                    </div>
+                  </Card>
+                </a>
               </Col>
             );
           })}
