@@ -5,13 +5,13 @@ export default function MovieCarousel({ results }) {
     <>
       <div
         className="movie-container"
-        style={{ padding: "0 2rem", boxSizing: "border-box", display: "block" }}
+        style={{ boxSizing: "border-box", display: "block" }}
       >
         <Carousel
           variant="dark"
           controls="false"
           style={{
-            padding: "4rem 0",
+            padding: "0 0 4rem",
             display: "flex",
             flex: "1 1",
             display: "flex",
@@ -24,7 +24,7 @@ export default function MovieCarousel({ results }) {
               <Carousel.Item key={idx}>
                 <div className="d-flex justify-content-center">
                   <img
-                    style={{ width: "90%", margin: "auto", height: "auto" }}
+                    style={{ width: "100%", margin: "auto", height: "auto" }}
                     src={"http://localhost:3000/movie_placeholder.jpg"}
                   />
                 </div>

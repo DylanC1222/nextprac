@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Header() {
   return (
     <>
-      <Navbar>
+      <Navbar style={{ padding: "1rem 0" }}>
         <Container>
           <Navbar.Brand href="/movies">Global Squad</Navbar.Brand>
           <Navbar.Toggle />
