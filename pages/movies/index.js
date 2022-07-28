@@ -8,7 +8,7 @@ import { fetchMovies } from "../../fetch/movies";
 
 export default function Movies(props) {
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={{ margin: "0 0 5rem 0" }}>
       <Header />
       <MovieCarousel results={props.movies.results} />
       <div className="container">

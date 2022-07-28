@@ -20,7 +20,7 @@ export default function ActorList({ results }) {
         <Row xs={2} md={5} className="g-4">
           {results.map((item, idx) => {
             return (
-              <Col>
+              <Col key={idx}>
                 <Card
                   key={idx}
                   className="shadow-sm"
