@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 export default function ArticleListComponent({ results }) {
   return (
     <div className="articles" style={{ margin: "2rem 0 0" }}>
-      <Row md={1} lg={2} className="g-4">
+      <Row xs={1} md={1} lg={2} className="g-4">
         {results.map((item, idx) => {
           return (
             <Col key={idx}>

@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 
-export default function MovieCarousel({ results }) {
+export default function MovieList({ results }) {
   return (
     <>
       <div

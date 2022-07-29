@@ -1,3 +1,8 @@
+.navbar {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
 .header {
   padding: 10px 20px 5px 20px;
   background: #f2f2f2;
@@ -17,17 +22,17 @@
 }
 
 .rank-block {
-  background-color: black;
-  width: 500px;
-  height: 500px;
+  background-color: #070707;
+  width: 25%;
+  height: 100%;
   position: absolute;
-  right: -18%;
-  bottom: 15px;
-  color: black;
+  bottom: 0;
+  color: white;
+  text-align: center;
 }
 
 .score-block {
-  background-color: black;
+  background-color: #070707;
   border-radius: 20px;
   width: 120px;
   height: 60px;
@@ -84,5 +89,22 @@
     position: relative;
     left: -1%;
     bottom: -15%;
+  }
+
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .score-block {
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .score-block {
+    bottom: 140px;
   }
 }
