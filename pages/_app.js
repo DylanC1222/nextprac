@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "../styles/headers.css";
+import "../styles/custom.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

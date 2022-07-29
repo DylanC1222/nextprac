@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 export default function ActorListComponent({ results }) {
   return (
     <div className="actor-list">
-      <Row xs={2} md={5} className="g-4">
+      <Row xs={2} md={4} lg={5} className="g-4">
         {results.map((item, idx) => {
           return (
             <Col key={idx}>
