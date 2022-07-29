@@ -5,31 +5,25 @@ export default function MovieCarousel({ results }) {
     <>
       <div
         className="movie-container"
-        style={{ boxSizing: "border-box", display: "block" }}
+        style={{
+          boxSizing: "border-box",
+          display: "block",
+          margin: "0 0 4rem",
+        }}
       >
-        <Carousel
-          variant="dark"
-          controls="false"
-          style={{
-            padding: "0 0 4rem",
-            display: "flex",
-            flex: "1 1",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Carousel>
           {results.map((item, idx) => {
             return (
               <Carousel.Item key={idx}>
-                <div className="d-flex justify-content-center">
-                  <img
-                    style={{ width: "100%", margin: "auto", height: "auto" }}
-                    src={"http://localhost:3000/images/movie_placeholder.jpg"}
-                  />
-                </div>
-                <Carousel.Caption style={{ color: "white" }}>
-                  <h3>{item.title}</h3>
+                <img
+                  className="d-block w-100"
+                  src={"http://localhost:3000/images/movie_placeholder.jpg"}
+                />
+                <Carousel.Caption>
+                  <h2>{item.title}</h2>
+                  <div className="score-block">
+                    <h2 className="score">{item.vote_average}</h2>
+                  </div>
                 </Carousel.Caption>
               </Carousel.Item>
             );
