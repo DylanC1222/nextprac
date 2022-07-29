@@ -9,7 +9,10 @@ export default function ArticleListComponent({ results }) {
         {results.map((item, idx) => {
           return (
             <Col key={idx}>
-              <a href="/" className="text-decoration-none text-primary">
+              <a
+                href={"/article/" + (idx + 1)}
+                className="text-decoration-none text-primary"
+              >
                 <Card
                   className={"d-flex flex-row border-0"}
                   style={{ width: "100%" }}
