@@ -1,0 +1,17 @@
+.header {
+  padding: 10px 20px 5px 20px;
+  background: #f2f2f2;
+  border: 1.5px outset gray;
+}
+
+.article-header {
+  margin: 3rem 0 1rem;
+}
+
+.actor-header {
+  margin: 1rem 0 1rem;
+}
+
+.wrapper {
+  margin: 0 0 5rem;
+}

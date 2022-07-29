@@ -25,7 +25,7 @@ export default function MovieCarousel({ results }) {
                 <div className="d-flex justify-content-center">
                   <img
                     style={{ width: "100%", margin: "auto", height: "auto" }}
-                    src={"http://localhost:3000/movie_placeholder.jpg"}
+                    src={"http://localhost:3000/images/movie_placeholder.jpg"}
                   />
                 </div>
                 <Carousel.Caption style={{ color: "white" }}>
