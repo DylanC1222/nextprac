@@ -10,21 +10,23 @@ export default function ArticleListComponent({ results }) {
           return (
             <Col key={idx}>
               <a href="/" className="text-decoration-none text-primary">
-                <Card style={{ width: "100%" }}>
-                  <div className={"d-flex flex-row"}>
-                    <img
-                      style={{ width: "75%", height: "auto" }}
-                      src={item.image_path}
-                    />
-                    <Card.Body>
-                      <Card.Title>{item.title}</Card.Title>
-                      <Card.Text className="text-dark">
-                        {item.description}
-                      </Card.Text>
-                    </Card.Body>
-                  </div>
+                <Card
+                  className={"d-flex flex-row border-0"}
+                  style={{ width: "100%" }}
+                >
+                  <Card.Img
+                    style={{ width: "75%", height: "auto" }}
+                    src={item.image_path}
+                  />
+                  <Card.Body>
+                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Text className="text-dark">
+                      {item.description}
+                    </Card.Text>
+                  </Card.Body>
                 </Card>
               </a>
+              <hr />
             </Col>
           );
         })}
