@@ -18,14 +18,21 @@ export default function ArticleListComponent({ results }) {
                   style={{ width: "100%" }}
                 >
                   <Card.Img
-                    style={{ width: "75%", height: "auto" }}
+                    style={{ minWidth: "40%", maxWidth: "40%", height: "auto" }}
                     src={item.image_path}
                   />
-                  <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text className="text-dark">
-                      {item.description}
-                    </Card.Text>
+                  <Card.Body
+                    style={{
+                      maxWidth: "60%",
+                      minWidth: "60%",
+                      minHeight: "100%",
+                      maxHeight: "100%",
+                    }}
+                  >
+                    <Card.Title style={{ fontSize: "150%" }}>
+                      {item.title}
+                    </Card.Title>
+                    <Card.Text className="text-dark">{item.date}</Card.Text>
                   </Card.Body>
                 </Card>
               </a>
