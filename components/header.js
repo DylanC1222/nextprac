@@ -7,7 +7,7 @@ export default function Header() {
       <Navbar style={{ padding: "1rem 0", margin: "1rem 0" }}>
         <Container>
           <Navbar.Brand style={{ fontSize: "2rem" }} href="/movies">
-            Global Squad
+            KinoLights
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">

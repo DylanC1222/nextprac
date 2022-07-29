@@ -2,19 +2,19 @@
   "page": 1,
   "results": [
     {
-      "title": "A really cool article title that is not too long and not too short but is in fact much longer than the average title. It is so long, in fact, that it stretches the component it's in",
+      "title": "A really cool article title that is not too long and not too short",
       "description": "A brief description about what this article is about and the celebrities it stars",
       "date": "2022/07/25 00:00",
       "image_path": "http://localhost:3000/images/article_pic.jpg"
     },
     {
-      "title": "Short title",
+      "title": "A really cool article title that is not too long and not too short",
       "description": "A brief description about what this article is about and the celebrities it stars",
       "date": "2022/07/25 00:00",
       "image_path": "http://localhost:3000/images/article_pic.jpg"
     },
     {
-      "title": "A really cool article title that is not too long and not too short but it still a little bit longer than the average title",
+      "title": "A really cool article title that is not too long and not too short",
       "description": "A brief description about what this article is about and the celebrities it stars",
       "date": "2022/07/25 00:00",
       "image_path": "http://localhost:3000/images/article_pic.jpg"
