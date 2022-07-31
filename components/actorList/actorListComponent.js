@@ -33,8 +33,13 @@ export default function ActorListComponent({ results }) {
                     }}
                   >
                     {item.known_for.map((movie, idx) => {
-                      if (movie.title) return movie.title + ", ";
-                      return movie.name + ", ";
+                      return idx + 1 !== item.known_for.length
+                        ? movie.title
+                          ? movie.title + ", "
+                          : movie.name + ", "
+                        : movie.title
+                        ? movie.title
+                        : movie.name;
                     })}
                   </Card.Text>
                 </Card.Body>
