@@ -21,6 +21,23 @@
   margin: 0 0 5rem;
 }
 
+.movie-container {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 0 4rem;
+}
+
+.movie-rank-cards {
+  width: 1000px;
+  height: 450px;
+}
+
+.movie-card {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
 .rank-block {
   background-color: #070707;
   width: 25%;
